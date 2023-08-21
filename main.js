@@ -4,50 +4,50 @@
 let productos = [
     {
       id: 1,
-      nombre: "Arroz",
-      categoria: "Almacen",
+      nombre: "arroz",
+      categoria: "almacen",
       stock: 100,
       precio: 250,
     },
     {
       id: 2,
-      nombre: "Coca-Cola",
-      categoria: "Almacen",
+      nombre: "coca-Cola",
+      categoria: "almacen",
       stock: 80,
       precio: 1000,
     },
     {
       id: 3,
-      nombre: "Mayonesa",
-      categoria: "Almacen",
+      nombre: "mayonesa",
+      categoria: "clmacen",
       stock: 40,
       precio: 4500,
     },
     {
       id: 4,
-      nombre: "Tira de asado",
-      categoria: "Carne",
+      nombre: "tira de asado",
+      categoria: "carne",
       stock: 100,
       precio: 2800,
     },
     {
       id: 5,
-      nombre: "Bife de chorizo",
-      categoria: "Carne",
+      nombre: "bife de chorizo",
+      categoria: "carne",
       stock: 30,
       precio: 1800,
     },
     {
       id: 6,
-      nombre: "Fideos",
-      categoria: "Almecen",
+      nombre: "fideos",
+      categoria: "almecen",
       stock: 80,
       precio: 350,
     },
     {
       id: 7,
-      nombre: "Vacio",
-      categoria: "Carne",
+      nombre: "vacio",
+      categoria: "carne",
       stock: 100,
       precio: 1500,
     },
@@ -69,10 +69,9 @@ let menu = "1 - Lista de productos\n2 - Informacion del producto\n3 - Agregar pr
           let categoria = prompt("Ingrese categoria Almacen o Carne").toLowerCase()
           let productosFiltrados = productos.filter(producto => producto.categoria === categoria)
           alert(listado(productosFiltrados))
-
         } else if (opcion === 5) {
           let total = carrito.reduce((acum, producto) => acum + producto.subtotal, 0)
-          alert("El total de su compra es: " + total)
+          alert("El total de su compra es: " + total +" Pesos")
           alert("Gracias por confiar en nosotros")
           break
         }
